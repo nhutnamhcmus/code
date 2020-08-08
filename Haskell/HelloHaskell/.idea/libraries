@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="libraryTable">
+    <library name="ghc-8.10">
+      <CLASSES />
+      <JAVADOC />
+      <NATIVE>
+        <root url="file://D:/Libraries/ghci/ghc-8.10.1" />
+      </NATIVE>
+      <SOURCES />
+    </library>
+    <library name="ghc-8.6">
+      <CLASSES />
+      <JAVADOC />
+      <SOURCES>
+        <root url="file://D:/Libraries/ghci/ghc-8.6.5" />
+      </SOURCES>
+    </library>
+  </component>
+</project>
