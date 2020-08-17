@@ -89,3 +89,16 @@ function arrayToList(array){
 }
 
 console.log(arrayToList([1, 2, 3]));
+
+
+let range = (low) => (high) => low > high ? null : pair (low) (range (low + 1) (high));
+
+console.log(range (1) (3));
+
+let map = (f) => (xs) => xs == null ? null : pair (f (head(xs))) (map (f) (tail(xs)));
+
+console.log(listToArray(map ((x) => x * x) (range (1) (10))));
+
+let fizzbuzz = (n) => ((n % 3 == 0 ? 'fizz' : '') + (n % 5 ? 'buzz' : '')) || n;
+
+console.log(listToArray(map (fizzbuzz) (range (1) (100))));
