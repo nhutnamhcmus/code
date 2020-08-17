@@ -74,3 +74,18 @@ function listToArray(list){
 }
 
 console.log(listToArray(ecc));
+
+
+function arrayToList(array){
+    let result = null;
+
+    array = Array.from(array).reverse();
+
+    for (let i = 0; i < array.length; ++i){
+        result = pair (array[i]) (result);
+    }
+
+    return result;
+}
+
+console.log(arrayToList([1, 2, 3]));
