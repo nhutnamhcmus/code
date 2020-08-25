@@ -102,3 +102,33 @@ console.log(listToArray(map ((x) => x * x) (range (1) (10))));
 let fizzbuzz = (n) => ((n % 3 == 0 ? 'fizz' : '') + (n % 5 ? 'buzz' : '')) || n;
 
 console.log(listToArray(map (fizzbuzz) (range (1) (100))));
+
+
+var tinchi = document.querySelectorAll("td:nth-child(3)");
+var monhoc = document.querySelectorAll("td:nth-child(2)");
+var diem = document.querySelectorAll("td:nth-child(6)");
+var diemtren = 0, diemduoi = 0;
+
+var csc = 0, cscCredits = 0;
+for (var i = 1; i < tinchi.length; i++) {
+  if (
+    monhoc[i].innerText.includes("Thể dục") ||
+    monhoc[i].innerText.includes("Anh văn") ||
+    monhoc[i].innerText.includes("Giáo dục") || Number(diem[i].innerText) < 5
+  ) {
+    continue;
+  }
+  diemtren += Number(tinchi[i].innerText) * Number(diem[i].innerText);
+  diemduoi += Number(tinchi[i].innerText);
+  if (monhoc[i].innerText.includes("CSC")) {
+	if (monhoc[i].innerText.includes("CSC00002") || monhoc[i].innerText.includes("CSC00001")) {
+		continue;  
+	}
+	csc += Number(tinchi[i].innerText) * Number(diem[i].innerText);
+	cscCredits += Number(tinchi[i].innerText);
+  }
+}
+console.log("Tổng tín chỉ tích luỹ hiện tại : " + diemduoi);
+console.log("Điểm trung bình : " + diemtren / diemduoi);
+console.log("Tổng tín chỉ tích luỹ cơ sở ngành : " + cscCredits);
+console.log("Trung bình môn cơ sở ngành: " + csc / cscCredits);
