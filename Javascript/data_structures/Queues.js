@@ -37,3 +37,18 @@ Queue.prototype.peek = function() {
 };
 
 let queue = new Queue();
+
+
+class _Queue {
+  constructor() {
+    this.queue = [];
+  }
+
+  enqueue(data) { this.queue.push(data); }
+
+  dequeue() { this.queue.shift(); }
+
+  isEmpty() { return this.queue === undefined || this.queue.length == 0; }
+
+  size() { return this.queue.length; }
+}
