@@ -1,3 +1,8 @@
+// Stack time complexity
+// Get, Search: average case O(n)
+// Insertion, Deletion: average case O(1)
+// Space: O(n)
+
 // Define 
 function Stack() {
     this._top = -1;
@@ -54,3 +59,22 @@ for (let i = 0; i <= 10; i++) {
 console.log('Top of the stack using Peek: ' + stack.peek());
 console.log('Pop from stack. Popped element = ' + stack.pop());
 console.log('Pop from stack. Popped element = ' + stack.pop());
+
+
+class _Stack {
+  constructor() {
+    this.stack = [];
+  }
+
+  push(data) { this.stack.push(data); }
+
+  pop() { this.stack.pop(); }
+
+  isEmpty() {return this.stack === undefined || this.stack.length == 0; }
+
+  size() { return this.stack.length; }
+}
+
+let myStack = new _Stack();
+myStack.push(1);
+console.log(myStack.size());
