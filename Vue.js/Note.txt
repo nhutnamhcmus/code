@@ -1,0 +1,14 @@
+Why use Vue?
+-> Makes creating UIs and front-end app mush easier
+-> Less of a learning curve than other frameworks
+-> Extremly fast and lightweight
+-> Build powerfull SPA apps
+-> Virtual DOM
+-> Growing in the insdustry
+
+What should know before learning Vue
+-> JavaScript Fundamentals (Objects, Arrays, Conditionals, ...)
+ES6 Module Sytanx
+High Order Array Method - forEach, map, filter
+Arrow Functions
+Fetch API & Promises

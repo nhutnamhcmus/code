@@ -1,0 +1,8 @@
+Basic thing about TypeScript = {Type annotations, Arrow functions, Interfaces, Classes. Contructors, Access modifiers, Properties, Modules}
+
+TypeScript {
+	"Strong typing"
+	"Object - oriented features"
+	"Compile - time errors"
+	"Great tooling"
+}
