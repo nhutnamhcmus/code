@@ -6,3 +6,16 @@ TypeScript {
 	"Compile - time errors"
 	"Great tooling"
 }
+
+TypeScript ---- Transpile ----> JavaScript
+
+How to install TypeScript
+Command: (sudo) npm install -g typescript
+Check TypeScript version: tsc --version
+
+----------------------
+JavaScript Versions
+ES5 (ECMAScript 5): supported by all browsers
+ES6 (2015)
+ES2016
+ES2017
