@@ -2,7 +2,7 @@ module Main where
 
 import Lib
 
-import HelloWorld
+import HelloWorld ( helloHaskell )
 
 main :: IO ()
 main = do

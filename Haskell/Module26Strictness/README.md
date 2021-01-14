@@ -1,0 +1,1 @@
+# Module26Strictness
