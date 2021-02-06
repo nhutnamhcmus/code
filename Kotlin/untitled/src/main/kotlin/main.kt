@@ -125,4 +125,7 @@ fun main(args: Array<String>) {
     println(fooSet.contains("a")) // => true
     println(fooSet.contains("z")) // => false
 
+    val fooMap = mapOf("a" to 8, "b" to 7, "c" to 9)
+
+    println(fooMap["a"]) // => 8
 }
